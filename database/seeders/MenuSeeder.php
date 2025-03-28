@@ -21,6 +21,20 @@ class MenuSeeder extends Seeder
                 'icon' => 'users',
                 'permission' => 'Sub Users-open',
             ],
+            [
+                'name' => 'User Roles',
+                'url' => '/roles',
+                'link' => 'roles.index',
+                'icon' => 'user-shield', // 🛡️ User with a shield (security/roles)
+                'permission' => 'User Roles-open',
+            ],
+            [
+                'name' => 'Permissions',
+                'url' => '/permissions',
+                'link' => 'permissions.index',
+                'icon' => 'user-check',
+                'permission' => 'Permissions-open'
+            ],
         ];
         foreach ($menuItems as $menuItem) {
             // Check if a menu item with the same URL already exists

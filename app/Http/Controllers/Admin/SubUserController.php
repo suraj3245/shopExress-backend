@@ -43,11 +43,6 @@ class SubUserController extends Controller
         return redirect()->route('subuser.index')->with('success', 'User Created Successfully');
     }
 
-    public function show(string $id)
-    {
-        //
-    }
-
     public function edit($id)
     {
         $user = User::findOrFail($id);
